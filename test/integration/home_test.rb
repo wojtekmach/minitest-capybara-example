@@ -25,8 +25,8 @@ class HomeTest < AcceptanceSpec
     page.must_have_content "Homepage"
 
     within ".login" do
-      assert_no_content "Signed in as"
-      page.must_have_no_content "Signed in as"
+      refute_content "Signed in as"
+      page.wont_have_content "Signed in as"
     end
 
     assert_link "Sign in"
