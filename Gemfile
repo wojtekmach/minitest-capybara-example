@@ -11,5 +11,5 @@ gem 'turbolinks'
 group :test do
   gem 'capybara', '~> 2.0'
   gem 'minitest', '~> 4.0'
-  gem 'minitest-capybara', github: 'wojtekmach/minitest-capybara', branch: 'pure'
+  gem 'minitest-capybara'
 end
