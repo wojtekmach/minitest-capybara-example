@@ -3,12 +3,21 @@ require "test_helper"
 require 'capybara/rails'
 require 'minitest/capybara'
 
-class AcceptanceTest < Minitest::Spec
+class AcceptanceTest < Minitest::Unit::TestCase
   include Capybara::DSL
-  include MiniTest::Capybara::Assertions
+  include Minitest::Capybara::Assertions
+
+  def teardown
+    Capybara.reset_session!
+    Capybara.use_default_driver
+  end
 end
 
-class HomeTest < AcceptanceTest
+class AcceptanceSpec < AcceptanceTest
+  extend Minitest::Spec::DSL
+end
+
+class HomeTest < AcceptanceSpec
   it "home test" do
     visit "/"
 
