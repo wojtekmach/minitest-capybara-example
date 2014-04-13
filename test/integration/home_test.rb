@@ -1,20 +1,9 @@
 require "test_helper"
+require "capybara/rails"
 
-require 'capybara/rails'
-require 'minitest/capybara'
-
-class AcceptanceTest < Minitest::Unit::TestCase
+class AcceptanceSpec < Minitest::Spec
   include Capybara::DSL
-  include Minitest::Capybara::Assertions
-
-  def teardown
-    Capybara.reset_session!
-    Capybara.use_default_driver
-  end
-end
-
-class AcceptanceSpec < AcceptanceTest
-  extend Minitest::Spec::DSL
+  include Capybara::Assertions
 end
 
 class HomeTest < AcceptanceSpec
