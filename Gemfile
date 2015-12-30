@@ -12,5 +12,5 @@ gem 'turbolinks'
 
 group :test do
   gem 'capybara', '~> 2.0'
-  gem 'minitest-capybara', '~> 0.6'
+  gem 'minitest-capybara', '~> 0.8'
 end

@@ -77,7 +77,7 @@ GEM
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
-    minitest-capybara (0.7.2)
+    minitest-capybara (0.8.0)
       capybara (~> 2.2)
       minitest (~> 5.0)
       rake
@@ -147,7 +147,7 @@ DEPENDENCIES
   capybara (~> 2.0)
   coffee-rails
   jquery-rails
-  minitest-capybara (~> 0.6)
+  minitest-capybara (~> 0.8)
   rails (~> 4.2)
   sass-rails
   sqlite3
