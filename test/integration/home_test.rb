@@ -1,12 +1,7 @@
 require "test_helper"
 require "capybara/rails"
 
-class AcceptanceSpec < Minitest::Spec
-  include Capybara::DSL
-  include Capybara::Assertions
-end
-
-class HomeTest < AcceptanceSpec
+class HomeSpec < Minitest::Capybara::Spec
   it "home test" do
     visit "/"
 
