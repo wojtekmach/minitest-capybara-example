@@ -9,8 +9,9 @@ gem 'sass-rails'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'json', '~> 2.0'
 
 group :test do
-  gem 'capybara', '~> 2.0'
-  gem 'minitest-capybara', '~> 0.8'
+  gem 'capybara', '~> 3.0'
+  gem 'minitest-capybara', '~> 0.9.0'
 end
